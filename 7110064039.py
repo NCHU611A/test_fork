@@ -5,6 +5,11 @@ Spyder Editor
 This is a temporary script file.
 """
 
+a = list(range(10))
+for i in range(10):
+    print(i)
+
+
 import sys
 
 class TreeNode:

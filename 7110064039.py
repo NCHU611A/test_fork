@@ -4,6 +4,15 @@ Spyder Editor
 
 This is a temporary script file.
 """
+MAX_V = 100
+N = 0
+place = 0
+visited = [None] * (MAX_V+1) #紀錄頂點是否已拜訪
+
+#宣告相鄰串列
+Top_order = [0] * (MAX_V+1)
+adjlist = [None] * (MAX_V+1)
+
 
 MAX_V = 100
 VISITED = 1
@@ -221,9 +230,6 @@ def main():
 #         elif option == 2:
 #             delete_f()#刪除函數
 # =============================================================================
-        elif option == 3:
-            display_f()#輸出函數
-        elif option == 4:
-            sys.exit(0)
+        
 
 main()

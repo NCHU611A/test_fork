@@ -5,6 +5,21 @@ Spyder Editor
 This is a temporary script file.
 """
 
+MAX_V = 100
+VISITED = 1
+NOTVISITED = 0
+Infinite = 1073741823
+
+# A[1..N][1..N]為圖形的相鄰矩陣
+# D[i] 用來儲存某起始頂點到i節點的最短路徑
+# S[1..N] 用來紀錄頂點是否已經拜放過
+# P[1..N] 用來記錄最近經過的中間節點
+A = [[0] * (MAX_V+1) for row in range(MAX_V+1)]
+D = [0] * (MAX_V+1)
+S = [0] * (MAX_V+1)
+P = [0] * (MAX_V+1)
+
+
 a = list(range(10))
 for i in range(10):
     print(i)

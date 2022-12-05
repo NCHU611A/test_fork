@@ -14,7 +14,7 @@ Top_order = [0] * (MAX_V+1)
 adjlist = [None] * (MAX_V+1)
 
 
-MAX_V = 100
+MAX_V = 30000
 VISITED = 1
 NOTVISITED = 0
 Infinite = 1073741823
